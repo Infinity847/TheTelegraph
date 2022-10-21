@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Telegraph-Username</title>
+        <link href = "style.css" rel = "stylesheet">
+    </head>
+    <body>
+      <br><br><br>
+      <div id = "image-body">
+<img src= "https://nationalmaglab.org/images/education/magnet_academy/history/museum/1844-telegraphreceiver.png">
+<br><b>The international MORSE CODE</b>
+      </div>
+      <br><br>
+      <input id = "username" placeholder = "Enter Username">
+  <button onclick = "join()">Join</button>
+  <script>
+    var inp = document.getElementById("username");
+    function join() {
+        if (inp.value == "") {
+            localStorage.setItem("Telegraph||Username","<p>Rick Astley</p> <br> <img style = 'width:100px;height:100px;border-radius:15px;' src = 'Rickroll.gif'>");
+            window.location = "main.html";
+        }
+        else {
+            localStorage.setItem("Telegraph||Username",inp.value);
+            window.location = "main.html";
+        }
+    }
+  </script>
+    </body>
+</html>

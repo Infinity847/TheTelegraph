@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Telegraph-ChatPage</title>
+       <!-- <link href = "Chat.css" rel = "stylehseet">-->
+       <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+       <style>
+        .logout {
+    color:white;
+    background-color:red;
+    border:2px solid rgb(252, 85, 85);
+  
+}
+h1,h2,h3,h4,h5,h6,p,b {
+    color:white;
+    font-family:Arial;
+}
+.btn {
+    color:white;
+    background-color:lightblue;
+    border:2px solid lightskyblue;
+    border-radius:2px;
+}
+.btn:hover {
+    color:blue;
+    background-color:lightblue;
+    border:2px solid lightskyblue;
+    border-radius:2px;
+}
+#message {
+    width:100%;
+}
+#Footer {
+    bottom: 0; position:fixed;
+    width:100%;
+background-color:rgb(37, 178, 225);
+border:2px solid lightskyblue;
+border-radius:15px;
+}
+body {
+    text-align:center;
+    background-color:lightblue;
+}
+.likebtn {
+    color:white;
+    background-color:lightgreen;
+    border:2px solid green;
+    border-radius:2px;
+    
+}
+       </style>
+    </head>
+    <body>
+        <button class = "logout" onclick = "backtohome()">Back</button><br><br>
+        <div id = "output">
+
+        </div>
+        <div id = "Footer">
+            <input id = "message">
+            <br><button class = "btn" onclick = "send()">Send</button>
+        </div>
+    <script src = "Chat.js"></script>    
+    </body>
+</html>

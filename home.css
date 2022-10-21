@@ -1,0 +1,40 @@
+.logout {
+    color:white;
+    background-color:red;
+    border:2px solid rgb(252, 85, 85);
+}
+body {
+    text-align:center;
+    background-color:lightblue;
+}
+.left-space { 
+    float:left;
+}
+.btn {
+    color:white;
+    background-color:lightblue;
+    border:2px solid lightskyblue;
+    border-radius:2px;
+}
+.btn:hover {
+    color:blue;
+    background-color:lightblue;
+    border:2px solid lightskyblue;
+    border-radius:2px;
+}
+h1,h2,h3,h4,h5,h6,p,b {
+    color:white;
+    font-family:Arial;
+}
+img {
+    border-radius:15px;
+}
+.room_name {
+    background-color:rgb(9, 193, 255);
+    border:2px solid lightskyblue;
+    color:white;
+    font-family:Arial;
+}
+#right-space {
+    float:right; 
+}
