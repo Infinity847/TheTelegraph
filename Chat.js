@@ -1,3 +1,45 @@
+function send() {
+    msg = document.getElementById("message").value;
+    
+    firebase.database().ref(room_name).push({
+        name: user_name,
+        message: msg,
+        like: 0
+    });
+function backtohome() {
+    window.location = "main.html";
+}
+var menu = false;
+var image = "";
+//YOUR FIREBASE LINKS
+
+const firebaseConfig = {
+    apiKey: "AIzaSyDaGspMMowJA1XcKCV502gbph_VeT9mgSo",
+    authDomain: "letschat-d3f44.firebaseapp.com",
+    databaseURL: "https://letschat-d3f44-default-rtdb.firebaseio.com",
+    projectId: "letschat-d3f44",
+    storageBucket: "letschat-d3f44.appspot.com",
+    messagingSenderId: "1061774008972",
+    appId: "1:1061774008972:web:d7c6224c564bd7c760d1a9"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+user_name = localStorage.getItem("Telegraph||Username");
+room_name = localStorage.getItem("room_name");
+if (user_name == undefined) {
+    window.location = "index.html"
+    }else {
+    
+    }
+function send() {
+    msg = document.getElementById("message").value;
+    
+    firebase.database().ref(room_name).push({
+        name: user_name,
+        message: msg,
+        like: 0
+    });
 
     document.getElementById("message").value = "";
 }
