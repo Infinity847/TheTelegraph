@@ -5,6 +5,7 @@
        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+       <script src = "https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
        <style>
         .logout {
     color:white;
@@ -58,7 +59,8 @@ body {
         </div>
         <div id = "Footer">
             <input id = "message">
-            <br><button class = "btn" onclick = "send()">Send</button>
+            <br><span><button class = "btn" onclick = "send()">Send</button><button class = "btn" onclick = "sender()">Selfie Sender</button></span><br>
+           <span id = "area"></span>
         </div>
     <script src = "Chat.js"></script>    
     </body>
